@@ -114,9 +114,9 @@ def show_info(surf, info_num, x, y, img):
 
     draw_text(screen, str(info_num + 1) + "/5", 20, WIDTH / 2 + 250, HEIGHT / 8 - 25, BLACK)
 
-    for line in open(r'C:\Users\CТАС\Desktop\MyGame\note_{}_info.txt'.format(info_num + 1), 'r', encoding='utf-8').read().split('\n'):
-        draw_text(screen, line, 12, WIDTH / 2, HEIGHT / 4 + 26 + indent, BLACK)
-        indent += 14
+#     for line in open(r'C:\Users\CТАС\Desktop\MyGame\note_{}_info.txt'.format(info_num + 1), 'r', encoding='utf-8').read().split('\n'):
+#         draw_text(screen, line, 12, WIDTH / 2, HEIGHT / 4 + 26 + indent, BLACK)
+#         indent += 14
       
     draw_text(screen, "Нажмите Enter, чтобы закрыть записку".upper(), 20, WIDTH / 2, HEIGHT / 4 + 400, BLACK)
         
@@ -580,12 +580,12 @@ while running:
             LEVEL += 1        
             POWER_UP_CHANCE -= 0.01
             NOTE_CHANCE -= 0.001
-            f = open(r'C:\Users\CТАС\Desktop\MyGame\player_info.py', 'w')
-            f.write('NOTES = {}\n'.format(int(NOTES)))
-            f.write('LEVEL = {}\n'.format(int(LEVEL)))
-            f.write('POWER_UP_CHANCE = {}\n'.format(int(POWER_UP_CHANCE)))
-            f.write('NOTE_CHANCE = {}\n'.format(int(NOTE_CHANCE)))
-            f.close()
+#             f = open(r'C:\Users\CТАС\Desktop\MyGame\player_info.py', 'w')
+#             f.write('NOTES = {}\n'.format(int(NOTES)))
+#             f.write('LEVEL = {}\n'.format(int(LEVEL)))
+#             f.write('POWER_UP_CHANCE = {}\n'.format(int(POWER_UP_CHANCE)))
+#             f.write('NOTE_CHANCE = {}\n'.format(int(NOTE_CHANCE)))
+#             f.close()
         newmob()
 
     # Рендеринг
